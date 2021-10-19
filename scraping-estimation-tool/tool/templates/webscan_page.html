@@ -1,0 +1,175 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+	<section role="main" class="content-body">
+		{% include "common/header-right.html" with title="Analyze" parent_dir="Analyze" child_dir="Dashboard" %}
+		<div class="row">
+			<div class="col-md-6">
+				<section class="panel">
+					<header class="panel-heading">
+						<div class="panel-actions">
+							<a href="#" class="fa fa-caret-down"></a>
+							<!-- <a href="#" class="fa fa-times"></a> -->
+						</div>
+
+						<h2 class="panel-title">Website Info [ Test my site ]</h2>
+					</header>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped mb-none">
+								<thead>
+								<tr>
+									<th>Page Speed score</th>
+									<th>First Byte Time</th>
+									<th>Complete page load time</th>
+									<th>Connection time</th>
+									<th>HTTPS score</th>
+									<th>HTTPS_2 score</th>
+									<th>Page Status score</th>
+								</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>{{ domain_info.page_speed_score}}</td>
+										<td>{{ domain_info.first_byte_time}}</td>
+										<td>{{ domain_info.complete_page_load_time}}</td>
+										<td>{{ domain_info.connection_time}}</td>
+										<td>{{ domain_info.https_score}}</td>
+										<td>{{ domain_info.https_2_score}}</td>
+										<td>{{ domain_info.page_status_score}}</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="col-md-6">
+				<section class="panel">
+					<header class="panel-heading">
+						<div class="panel-actions">
+							<a href="#" class="fa fa-caret-down"></a>
+							<!-- <a href="#" class="fa fa-times"></a> -->
+						</div>
+
+						<h2 class="panel-title">Server Information</h2>
+					</header>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped mb-none">
+								<thead>
+								<tr>
+									<th>City</th>
+									<th>ISP</th>
+									<th>Country</th>
+									<th>Internet Company</th>
+									<th>Time Zone</th>
+									<th>Region name</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>{{ domain_info.city }}</td>
+									<td>{{ domain_info.isp }}</td>
+									<td>{{ domain_info.country }}</td>
+									<td>{{ domain_info.internet_company }}</td>
+									<td>{{ domain_info.timezone }}</td>
+									<td>{{ domain_info.region_name }}</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="col-md-12">
+				<section class="panel">
+					<header class="panel-heading">
+						<div class="panel-actions">
+							<a href="#" class="fa fa-caret-down"></a>
+							<!-- <a href="#" class="fa fa-times"></a> -->
+						</div>
+
+						<h2 class="panel-title">Website Parameters [ woorank ]</h2>
+					</header>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped mb-none">
+								<thead>
+								<tr>
+									<th>Website overall score</th>
+									<th>Inpage Links</th>
+									<th>IP</th>
+									<th>Doctype</th>
+									<th>Encoding</th>
+									<th>Cutsom error page</th>
+									<th>Language</th>
+									<th>URL parameters</th>
+									<th>Disovered pages</th>
+									<th>Traffic estimation</th>
+									<th>Traffic rank</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>{{ domain_info.website_overall_score }}</td>
+									<td>{{ domain_info.in_page_links }}</td>
+									<td>{{ domain_info.ip }}</td>
+									<td>{{ domain_info.doc_type }}</td>
+									<td>{{ domain_info.encoding }}</td>
+									<td>{{ domain_info.custom_error_page }}</td>
+									<td>{{ domain_info.language }}</td>
+									<td>{{ domain_info.url_parameters }}</td>
+									<td>{{ domain_info.discovered_pages }}</td>
+									<td>{{ domain_info.traffic_estimation }}</td>
+									<td>{{ domain_info.traffic_rank }}</td>	
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="col-md-6">
+				<section class="panel">
+					<header class="panel-heading">
+						<div class="panel-actions">
+							<a href="#" class="fa fa-caret-down"></a>
+							<!-- <a href="#" class="fa fa-times"></a> -->
+						</div>
+
+						<h2 class="panel-title">Difficulty Information</h2>
+					</header>
+					<div class="panel-body">
+						<div class="table-responsive">
+							<table class="table table-striped mb-none">
+								<thead>
+								<tr>
+									<th>External JS files</th>
+									<th>JS Difficulty</th>
+									<th>Total forms</th>
+									<th>Form Difficulty</th>
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<td>{{ difficulty_info.total_js_files }}</td>
+									<td>{{ difficulty_info.js_difficulty }}</td>
+									<td>{{ difficulty_info.total_forms }}</td>
+									<td>{{ difficulty_info.form_difficulty }}</td>
+								</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+</section>
+{% endblock content %}
+
+{% block js %}
+	  <script src="{% static 'js/dashboard/twitter_daily.js' %}"></script>
+{% endblock %}

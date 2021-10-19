@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block body_content %}
+
+<section class="body-sign">
+    <div class="center-sign">
+        <a href="/" class="logo pull-left">
+            <img src="{% static 'images/bukka_logo.png' %}" height="40" alt="Porto Admin" />
+        </a>
+        <br>
+        <br>
+        <div class="panel panel-sign">
+            <div class="panel-title-sign mt-xl text-right">
+                <!-- <h2 class="title text-uppercase text-bold m-none"><i class="fa fa-user mr-xs"></i> {% trans "Account" %}</h2> -->
+            </div>
+            <div class="panel-body" style="box-shadow: 0 0 20px rgba(0,0,0,0.5);">
+                {% block body_accounts %}{% endblock %}
+            </div>
+        </div>
+        {% include "common/footer.html" %}
+    </div>
+</section>
+{% endblock %}

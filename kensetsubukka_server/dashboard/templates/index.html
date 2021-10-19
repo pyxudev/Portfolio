@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% load static %}
+{% load i18n %}
+{% block css_common %}
+	<!-- Specific Page Vendor CSS -->
+	<!-- <link rel="stylesheet" href="{% static 'vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css' %}" />
+	<link rel="stylesheet" href="{% static 'vendor/bootstrap-multiselect/bootstrap-multiselect.css' %}" />
+	<link rel="stylesheet" href="{% static 'vendor/morris/morris.css' %}" /> -->
+	<link rel="stylesheet" href="{% static 'custom/css/overlay.css' %}" />
+	<link rel="stylesheet" href="{% static 'custom/css/dashboard.css' %}" />
+{% endblock %}
+{% block content %}
+	<section>
+		<div id="overlay">
+		</div>
+		<div class = row id="content">
+			<div class="col-md-1 col-sm-1"></div>
+			<div class="col-md-10 col-sm-10">
+				<br>
+				<br>
+				<br>
+				<div class="buttons-body">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-6 ">
+							<button type="button" onclick="call_request_scraping()" class="btn btn-primary_0" data-toggle="tooltip" data-placement="top" %}">{% trans "Request New Scraping" %}</button>
+						</div>
+						<div class="col-lg-5 col-md-5 col-sm-5 ">
+						</div>
+						<div class="col-lg-1 col-md-1 col-sm-1 text-right">
+							<button type="button" onclick="refresh_requests()" class="btn btn-primary_1" data-toggle="tooltip" data-placement="top" title="{% trans "Click to check updated status" %}" style="align-self: right;"><i class="fa fa-refresh fa-lg"  aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+				<div class="main-body">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 p-3 my-3">
+							<div class="request-body">
+								<h4 style="margin-top: 50px;"> {% trans "Ongoing Requests" %}</h4>
+								<table class="table" id="request_table">
+									<col style="width: 20%;" />
+									<col style="width: 25%;" />
+									<col style="width: 35%;" />
+									<col style="width: 20%;" />
+									<thead class="thead-dark">
+										<tr>
+											<th style="border-bottom: 0px;" scope="col">{% trans "Task" %}ID</th>
+											<th style="border-bottom: 0px;" scope="col">{% trans "Received Time" %}</th>
+											<th style="border-bottom: 0px;" scope="col">{% trans "Status" %}</th>
+											<th style="border-bottom: 0px;" scope="col">{% trans "Action" %}</th>
+										</tr>
+									</thead>
+									<br>
+									<tbody class="table-body">
+										{% for request in requests %}
+											{% if request.running_status != 4 %}
+												<tr class = "request_type{{request.running_status}}">
+													<th>{{request.task_id}}</th>
+													<td>{{request.time_received}}</td>
+													<td>{% trans request.last_status %}</td>
+													{% if request.running_status == 1 or request.running_status == 2 %}
+														<td><button type="button" onClick="cancel_request({{request.task_id}})" class="cancel_button" data-toggle="tooltip" data-placement="top" style="font-size: 12px;">{% trans "Cancel" %}</button></td>
+													{% else  %}
+														<td><button type="button" class="disable_button" data-toggle="tooltip" data-placement="top" style="font-size: 12px;" disabled>{% trans "Cancel" %}</button></td>
+													{% endif %}
+												</tr>
+											{% endif %}
+										{% endfor %}
+									</tbody>
+								</table>
+								<h4 style="margin-top: 100px;"> {% trans "Completed Requests" %}</h4>
+								<table class="table" id="request_table">
+									<col style="width: 20%;" />
+									<col style="width: 25%;" />
+									<col style="width: 35%;" />
+									<col style="width: 20%;" />
+									<thead class="thead-dark">
+										<tr>
+											<th style="border-bottom: 0px;" scope="col">{% trans "Task" %}ID</th>
+											<th style="border-bottom: 0px;" scope="col">{% trans "Ending Time" %}</th>
+											<th style="border-bottom: 0px;" scope="col">{% trans "Status" %}</th>
+											<th style="border-bottom: 0px;" scope="col">{% trans "Action" %}</th>
+										</tr>
+									</thead>
+									<br>
+									<tbody class="table-body">
+										{% for request in requests %}
+											{% if request.running_status == 4 %}
+												<tr class = "request_type{{request.running_status}}">
+													<th>{{request.task_id}}</th>
+													<td>{{request.time_end}}</td>
+													<td>{% trans request.last_status %}</td>
+													{% if request.was_downloaded %}
+														<td><button type="button" class="disable_button" data-toggle="tooltip" data-placement="top" style="font-size: 12px;" disabled>{% trans "Download" %}</button></td>
+													{% else %}
+														<td><button type="button" onClick="download_file({{request.task_id}})" class="download_button" data-toggle="tooltip" data-placement="top" style="font-size: 12px;">{% trans "Download" %}</button></td>
+													{% endif %}
+												</tr>
+											{% endif %}
+										{% endfor %}
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <style type="text/css">
+		.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr {
+		    padding: 8px;
+		    line-height: 1.42857143;
+		    vertical-align: top;
+		    border-bottom: 1px solid #dddddd;
+		}
+		.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+		    padding: 8px;
+		    line-height: 1.42857143;
+		    vertical-align: top;
+		    border-top: 0px solid #dddddd;
+		}
+	</style> -->
+{% endblock %}
+{% block js_common %}
+{% endblock %}
+{% block js %}
+	<script src="{% static 'js/dashboard/examples.dashboard.js' %}"></script>
+	
+{% endblock %}

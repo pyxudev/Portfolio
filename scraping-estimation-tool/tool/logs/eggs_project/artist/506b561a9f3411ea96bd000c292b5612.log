@@ -1,0 +1,144 @@
+2020-05-26 02:36:04 [scrapy.utils.log] INFO: Scrapy 2.0.1 started (bot: eggs_project)
+2020-05-26 02:36:04 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.6.9 (default, Apr 18 2020, 01:56:04) - [GCC 8.4.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1f  31 Mar 2020), cryptography 2.9, Platform Linux-5.3.0-53-generic-x86_64-with-Ubuntu-18.04-bionic
+2020-05-26 02:36:04 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2020-05-26 02:36:04 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'eggs_project',
+ 'COOKIES_ENABLED': False,
+ 'LOG_FILE': 'logs/eggs_project/artist/506b561a9f3411ea96bd000c292b5612.log',
+ 'NEWSPIDER_MODULE': 'eggs_project.spiders',
+ 'SPIDER_MODULES': ['eggs_project.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) '
+               'Gecko/20100101 Firefox/75.0'}
+2020-05-26 02:36:04 [scrapy.extensions.telnet] INFO: Telnet Password: 0db869c9c3f59534
+2020-05-26 02:36:04 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-05-26 02:36:05 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2020-05-26 02:36:05 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:05 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:05 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-05-26 02:36:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2020-05-26 02:36:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-05-26 02:36:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-05-26 02:36:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-05-26 02:36:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:36:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2020-05-26 02:36:08 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'eggs_project.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-05-26 02:36:08 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-05-26 02:36:09 [scrapy.middleware] INFO: Enabled item pipelines:
+['eggs_project.pipelines.EggsPipeline']
+2020-05-26 02:36:09 [scrapy.core.engine] INFO: Spider opened
+2020-05-26 02:36:09 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-05-26 02:36:09 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-05-26 02:36:09 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
+2020-05-26 02:36:09 [py.warnings] WARNING: /home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/project.py:94: ScrapyDeprecationWarning: Use of environment variables prefixed with SCRAPY_ to override settings is deprecated. The following environment variables are currently defined: JOB, LOG_FILE, SLOT, SPIDER
+  ScrapyDeprecationWarning
+
+2020-05-26 02:36:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://eggs.mu/artist/peeto> (referer: None)
+2020-05-26 02:36:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://eggs.mu/artist/peeto> (referer: None)
+Traceback (most recent call last):
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/tmp/eggs_project-1590485756-p2uc5i6k.egg/eggs_project/spiders/eggs_data.py", line 179, in parse_artist
+    if song_likes is not None:
+NameError: name 'song_likes' is not defined
+2020-05-26 02:36:11 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-05-26 02:36:11 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 294,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 12305,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.914376,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 5, 26, 9, 36, 11, 922208),
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 46,
+ 'memusage/max': 65560576,
+ 'memusage/startup': 65560576,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/NameError': 1,
+ 'start_time': datetime.datetime(2020, 5, 26, 9, 36, 9, 7832)}
+2020-05-26 02:36:11 [scrapy.core.engine] INFO: Spider closed (finished)

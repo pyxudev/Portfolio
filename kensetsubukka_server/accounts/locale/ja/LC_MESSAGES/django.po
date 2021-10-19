@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-11-11 15:18+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: forms.py:20
+#, fuzzy
+#| msgid "Incorrect email address"
+msgid "Please enter the correct email address"
+msgstr "メールアドレスが違います"
+
+#: forms.py:25
+msgid "Username or Email-address"
+msgstr "アカウント名またはメールアドレスを入力してください"
+
+#: forms.py:32 forms.py:77
+msgid "Last Name"
+msgstr "姓"
+
+#: forms.py:33 forms.py:78
+msgid "First Name"
+msgstr "名"
+
+#: forms.py:34 forms.py:79
+msgid "Username"
+msgstr "ユーザーネーム"
+
+#: forms.py:44 forms.py:89
+msgid "Incorrect email address"
+msgstr "メールアドレスが違います"
+
+#: forms.py:46 forms.py:91
+msgid "Email already exists"
+msgstr "すでに存在しているメールアドレスです"
+
+#: forms.py:80
+msgid "Email"
+msgstr ""
+
+#: templates/common/accounts-sns.html:7 templates/common/accounts-sns.html:8
+msgid "Connect with"
+msgstr "連携する"
+
+#: templates/pages/login.html:9
+msgid "Lost Password?"
+msgstr "ログインでお困りですか？"
+
+#: templates/pages/login.html:11
+msgid "Remember Me"
+msgstr "ログイン情報を保存"
+
+#: templates/pages/login.html:12 templates/pages/signup.html:13
+msgid "Login"
+msgstr "ログイン"
+
+#: templates/pages/login.html:15 templates/pages/signup.html:8
+msgid "Signup"
+msgstr "サインアップ"
+
+#: templates/pages/login.html:16
+msgid "Don't have an account yet?"
+msgstr "アカウントを作成する"
+
+#: templates/pages/password_reset.html:7
+msgid "Send"
+msgstr "送信"
+
+# msgid "Remembered?"
+# msgstr "ログインページに戻る"
+#: templates/pages/signup.html:7
+msgid "label_text"
+msgstr "この内容で間違いありません"
+
+#: templates/pages/signup.html:9
+msgid "Already have an account?"
+msgstr "すでにアカウントをお持ちの方"

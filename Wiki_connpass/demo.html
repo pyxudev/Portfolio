@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SDT社内Wiki</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+            <a class="brand">SDT内部Wiki</a>
+            <nav class="nav">
+                <ul class="nav__wrapper">
+                    <li class="nav__item"><a href="#">ホーム</a></li>
+                    <li class="nav__item"><a href="#">カテゴリー</a></li>
+                    <li class="nav__item"><a href="#">閲覧履歴</a></li>
+                    <li class="nav__item"><a href="#">ランキング</a></li>
+                    <li class="nav__item"><a href="#">バグ報告</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="question">
+            <ul>
+                <li class="icon">
+                    <img src="https://i.pinimg.com/736x/64/81/22/6481225432795d8cdf48f0f85800cf66.jpg">
+                </li>
+                <li class="info">
+                    <span>
+                        【PHP】PDOで"INSERT INTO...WHERE NOT EXISTS..."が不明なエラーを起こします
+                    </span>
+                </li>
+            </ul>
+            <span class="gray">
+                2021年7月9日　質問者:Xu
+            </span>
+        </div>
+        <ul>
+            <li class="awnser">
+                <div class="post-best">
+                    最も評価が高かった回答
+                    <ul>
+                        <li class="icon">
+                            <img src="https://illust8.com/wp-content/uploads/2020/02/new-employee_female_7200.png">
+                        </li>
+                        <li>
+                            <span class="info">
+                                同じ現象でつまずいたことがありました！<br>
+                                INSERT INTO table_name (column1, column2) VALUES (value1, value2) WHERE NOT EXITSTS...と書くとなぜかうまくいきません...<br>
+                                VALUES (value1, value2)をWHERE NOT EXISTS (SELECT * FROM table_name WHERE column = value);にすると動きます！
+                            </span>
+                            <span class="gray">回答者:SDT社員A</span>
+                        </li>
+                    </ul>
+                </div>
+                <span>その他の回答↓</span>
+                <div class="post-others">
+                    <ul>
+                        <li class="icon">
+                            <img src="https://i.pinimg.com/736x/64/81/22/6481225432795d8cdf48f0f85800cf66.jpg">
+                        </li>
+                        <li>
+                            <span class="info">
+                                $PDO->prepare()<br>
+                                $PDO->bindParam()<br>
+                                $PDO->execute()<br>
+                                の順番で実行しましたでしょうか？
+                            </span>
+                            <span class="gray">回答者:SDT社員B</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="post-others">
+                    <ul>
+                        <li class="icon">
+                            <img src="https://i.pinimg.com/736x/64/81/22/6481225432795d8cdf48f0f85800cf66.jpg">
+                        </li>
+                        <li>
+                            <span class="info">
+                                https://johobase.com/multiple-insert-sql/<br>
+                                こちらわかりやすいです
+                            </span>
+                            <span class="gray">回答者:SDT社員C</span>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="side">
+                <div>
+                    ステータス:解決済み<br>
+                    回答数:3<br>
+                    月間ランキング:40<br>
+                    スタンプ:<img src="./slack_stamp.png">
+                </div>
+            </li>
+    </div>
+    </div>
+</body>
+
+</html>
+<style type="text/css">
+body {
+	margin: 0px;
+}
+.brand {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 40px;
+}
+
+.site-header {
+    position: relative;
+    background-color: #808080;
+    color: #fff;
+}
+
+.site-header__wrapper {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+@media (min-width: 600px) {
+    .site-header__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 600px) {
+    .nav__wrapper {
+        display: flex;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 599px) {
+    .nav__wrapper {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        z-index: -1;
+        background-color: #d9f0f7;
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+    }
+
+    .nav__wrapper.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav__item a{
+	text-decoration: none;
+	color: #fff;
+    display: block;
+    padding: 0.5rem 0.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 599px) {
+    .nav__toggle {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+    }
+}
+
+body {
+    background-color: #dcdcdc;
+}
+
+.content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.question,
+.awnser,
+.side {
+    padding: 0.5em 1em;
+    background-color: #fff;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    margin-top: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+.question ul li {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: xx-large;
+}
+
+.question .info {
+    width: 80%;
+}
+
+.question ul li img {
+    width: 80px;
+    height: 80px;
+}
+
+.gray {
+    color: #808080;
+}
+
+ul li {
+    display: inline-block;
+    vertical-align: top;
+    font-size: xx-large;
+}
+
+.awnser {
+    width: 70%;
+    margin-right: 3%;
+}
+
+.post-best {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #FFF;
+    background: #deb887;
+    border-bottom: solid 6px #d2b48c;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+
+.post-best {
+    color: #000;
+}
+
+.awnser .icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.awnser .info,
+.gray {
+    font-size: medium;
+    display: block;
+}
+
+.post-others {
+    border-bottom: 1px solid #a9a9a9;
+    margin-bottom: 20px;
+}
+
+.side {
+    width: 21%;
+    font-size: medium;
+}
+
+.side img {
+    margin-left: 10px;
+    height: 23px;
+}
+</style>

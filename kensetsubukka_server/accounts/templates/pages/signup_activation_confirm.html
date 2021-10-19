@@ -1,0 +1,10 @@
+{% extends "base-accounts.html" %}
+{% load static %}
+
+{% block body_accounts %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {% include "common/accounts-content.html" with title="仮登録完了のお知らせ" text="会員登録確認メールを送信しました。まだ、会員登録は完了していません。確認メールを送信しましたので、確認メールに記載されているリンクから本登録を行ってください。" %}
+    {% include "common/accounts-p.html" with name="メールが届かない場合" href="../signup" %}
+</form>
+{% endblock %}

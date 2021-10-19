@@ -1,0 +1,1 @@
+【{{ settings.PROJECT_NAME }}】仮登録完了のお知らせ（{{ settings.COMPANY_NAME }}）

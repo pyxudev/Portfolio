@@ -1,0 +1,45 @@
+{% load i18n %}
+{% load static %}
+<header class="header">
+    <div class="logo-container">
+        <a href="{% url "dashboard:index" %}" class="logo"><img src="{% static 'images/bukka_logo.png' %}" height="35" alt="Logo" /></a>
+    </div>
+    
+    <div class="header-right">
+        <span class="separator"></span>
+        <span class="separator"></span>
+        {% if user.is_authenticated %}
+        <ul class="notifications">
+           <li>
+            <a href="{% url "accounts:logout" %}">
+                <i class="fa fa-sign-in fa-lg"></i>&nbsp; {% trans "Logout" %}
+            </a>
+           </li> 
+        </ul>
+        <span class="separator"></span>
+        {% else %}
+        <ul class="notifications">
+           <li>
+            <a href="{% url "accounts:login" %}">
+                <i class="fa fa-sign-in fa-lg"></i>&nbsp; {% trans "Login" %}
+            </a>
+           </li> 
+        </ul>
+        <span class="separator"></span>
+        <ul class="notifications">
+            <li>
+             <a href="{% url "accounts:signup" %}">
+                 <i class="fa fa-user fa-lg"></i>&nbsp; {% trans "Signup" %}
+             </a>
+            </li> 
+         </ul>
+         <span class="separator"></span>
+        {% endif %}
+        <ul class="notifications">
+           <li>
+            
+           </li> 
+        </ul>
+        
+    </div>
+</header>

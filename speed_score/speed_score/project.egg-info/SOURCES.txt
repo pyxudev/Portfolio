@@ -1,0 +1,13 @@
+setup.py
+project.egg-info/PKG-INFO
+project.egg-info/SOURCES.txt
+project.egg-info/dependency_links.txt
+project.egg-info/entry_points.txt
+project.egg-info/top_level.txt
+speed_score/__init__.py
+speed_score/items.py
+speed_score/middlewares.py
+speed_score/pipelines.py
+speed_score/settings.py
+speed_score/spiders/__init__.py
+speed_score/spiders/speed_score.py

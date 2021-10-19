@@ -1,0 +1,11 @@
+/.idea/
+/venv/
+.vscode/
+*.log
+*.pot
+*.pyc
+__pycache__/
+local_settings.py
+media
+db.sqlite3
+*.swp

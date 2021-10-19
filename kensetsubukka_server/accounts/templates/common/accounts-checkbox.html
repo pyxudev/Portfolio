@@ -1,0 +1,15 @@
+{% load static %}
+<div class="row">
+    <div class="col-sm-8">
+        <div class="checkbox-custom checkbox-default">
+            <input id="AgreeTerms" name="agreeterms" type="checkbox"/>
+            <label for="AgreeTerms">{{ label_text }} <a href="#">{{ label_name }}</a></label>
+            <!-- <input id="RememberMe" name="rememberme" type="checkbox"/> -->
+            <!-- <label for="RememberMe">Remember Me</label> -->
+        </div>
+    </div>
+    <div class="col-sm-4 text-right">
+        <button type="submit" class="btn btn-primary hidden-xs">{{ button }}</button>
+        <button type="submit" class="btn btn-primary btn-block btn-lg visible-xs mt-lg">{{ button }}</button>
+    </div>
+</div>

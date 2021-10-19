@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<link rel="stylesheet" href="{% static 'app/vendors/common/css/style.css' %}">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<nav class="navbar navbar-expand-lg navbar-light bg-pink">
+			<a class="navbar-brand" href="../home"><span><b>メンヘラ.com β</b></span></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="../goods/"><span class="tags"><img src="../static/app/vendors/common/image/shopping.png"><b>物販</b></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link"static/app/vendors/common/image/logout.png href="../blogs/"><span><img src="../static/app/vendors/common/image/blog.png"><b>ブログ</b></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../chat/"><span><img src="../static/app/vendors/common/image/chat.png"><b>チャット</b></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../timeline/"><span><img src="../static/app/vendors/common/image/world.png"><b>ワールド</b></span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="../future/"><span><img src="../static/app/vendors/common/image/future.png"><b>占い</b></span></a>
+					</li>
+					{% if user.is_authenticated %}
+						<li class = "nav-item">
+							<a class="nav-link" href="#">
+								<span>
+									<img src="../static/app/vendors/common/image/Zhou.jpg">
+									<b>
+									{{ user.get_username }}
+									</b>
+								</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/login" class="top_tag">
+								<i class="fa fa-fw fa-sign-out"></i>
+								<span>
+									<img src="../static/app/vendors/common/image/logout.png">
+									<b>
+									ログアウト
+									</b>
+								</span>
+							</a>
+						</li>
+					{% else %}
+						<li class="nav-item">
+							<a href="../login/" class="top_tag_last">
+								<span><b>Login</b></span>
+							</a>
+						</li>
+					{% endif %}
+				</div>
+			</ul>
+		</div>
+	</nav>
+</head>
+<body>
+	<div class="bg">
+		<side>
+		{% block sidebar %}
+			{% include "sidebar.html" %}
+		{% endblock sidebar %}
+		</side>
+		<div class="block">
+			{% block content %}
+			{% endblock %}
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+<footer>
+	<div class="footer_left">
+		<center>
+		<div>
+			<li class="footer_inner" style="margin-top: 30px">
+				<img src="../static/app/vendors/common/image/company_logo.png" height="50px">
+				<h1 style="display: inline-block;"><b>株式会社コックリ</b></h1>
+				<br>
+				<a href="https://dev-co-creator.wixsite.com/home"><span>探したい「面白い」が見つかる</span></a>
+			</li>
+		</div>
+		<div>
+			<li class="footer_inner">
+				<a href="#"><img src="../static/app/vendors/common/image/twitter.png" height="20px"></a>
+				<a href="#"><img src="../static/app/vendors/common/image/youtube.png" height="20px"></a>
+			</li>
+		</div>
+		</center>
+	</div>
+	<div class="footer_right">
+		<div>
+			<span>お問い合わせ</span>
+			<br>
+			<a class="tel" href="tel: +81-80-4333-7743"><b>TEL:080-4333-7743</b></a>
+			<br>
+			<a class="email" href="mailto: ibusiness0501@gmail.com"><b>E-mail:ibusiness0501@gmail.com</b></a>
+		</div>
+		<div>
+			<li class="footer_inner">
+				<a href="#">プライバシーポリシー</a>
+			</li>
+			<li style="color: #A9A9A9;" class="footer_inner">
+				・
+			</li>
+			<li class="footer_inner">
+				<a href="#">広告掲載</a>
+			</li>
+		</div>
+	</div>
+</footer>
+</html>

@@ -1,0 +1,164 @@
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2020-04-22 22:22:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-04-22 22:22:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-04-22 22:22:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-04-22 22:22:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2020-04-22 22:22:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-04-22 22:22:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2020-04-22 22:22:44 [py.warnings] WARNING: /home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/project.py:94: ScrapyDeprecationWarning: Use of environment variables prefixed with SCRAPY_ to override settings is deprecated. The following environment variables are currently defined: JOB, LOG_FILE, SLOT, SPIDER
+  ScrapyDeprecationWarning
+
+2020-04-22 22:23:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.amazon.com/> (referer: https://asm.ca.com/en/ping.php)
+Traceback (most recent call last):
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/estimation_tool/tool/estimation_tool_scrapy/spiders/justping.py", line 108, in tor_block
+    yield scrapy.Request(url=response.meta['url'],
+KeyError: 'url'
+2020-04-22 22:23:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.amazon.com/> (referer: https://asm.ca.com/en/ping.php)
+Traceback (most recent call last):
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/estimation_tool/tool/estimation_tool_scrapy/spiders/justping.py", line 108, in tor_block
+    yield scrapy.Request(url=response.meta['url'],
+KeyError: 'url'
+2020-04-22 22:23:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.amazon.com/> (referer: https://asm.ca.com/en/ping.php)
+Traceback (most recent call last):
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/estimation_tool/tool/estimation_tool_scrapy/spiders/justping.py", line 108, in tor_block
+    yield scrapy.Request(url=response.meta['url'],
+KeyError: 'url'
+2020-04-22 22:23:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.amazon.com/> (referer: https://asm.ca.com/en/ping.php)
+Traceback (most recent call last):
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/defer.py", line 117, in iter_errback
+    yield next(it)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/python.py", line 345, in __next__
+    return next(self.data)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/offsite.py", line 29, in process_spider_output
+    for x in result:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/referer.py", line 338, in <genexpr>
+    return (_set_referer(r) for r in result or ())
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/urllength.py", line 37, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/spidermiddlewares/depth.py", line 58, in <genexpr>
+    return (r for r in result or () if _filter(r))
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/spidermw.py", line 64, in _evaluate_iterable
+    for r in iterable:
+  File "/home/sandy/Desktop/set_project/estimation_tool/tool/estimation_tool_scrapy/spiders/justping.py", line 108, in tor_block
+    yield scrapy.Request(url=response.meta['url'],
+KeyError: 'url'

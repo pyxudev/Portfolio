@@ -1,0 +1,24 @@
+{% autoescape off %}
+==================================================
+{{ settings.PROJECT_NAME }}  仮登録のご案内
+==================================================
+{{ settings.PROJECT_NAME }}のアカウント登録をいただきましてありがとうございます。
+現在、仮登録の状態です。以下のURLにアクセスして本登録を行ってください。
+本登録完了後、{{ PROJECT_NAME }}のマイページをご案内いたします。
+
+<a href="{{ protocol }}://{{ domain }}{% url 'accounts:signup_activation_complete' token %}">{{ protocol }}://{{ domain }}{% url 'accounts:signup_activation_complete' token %}</a>
+(クリックできない場合はブラウザーのアドレス欄にコピーしてください)
+
+
+【 ご 注 意 】
+※上記URLは、メールを受信してから24時間以内にクリックしてください。
+　これを経過すると無効となりますので、再度会員登録を行ってください。
+
+※このメールにお心当たりのない場合、大変お手数ですが、本メールの破棄を
+　お願いいたします。
+
+
+発行元： {{ settings.COMPANY_NAME }} <{{ settings.COMPANY_EMAIL }}>
+{{ settings.COMPANY_ADDRESS }}
+{% endautoescape %}
+

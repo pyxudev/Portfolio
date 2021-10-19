@@ -1,0 +1,671 @@
+2021-06-11 12:12:14 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: itmedia)
+2021-06-11 12:12:14 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.5 (default, Dec  4 2020, 11:17:20) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid
+2021-06-11 12:12:14 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-06-11 12:12:14 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'itmedia',
+ 'COOKIES_DEBUG': True,
+ 'LOG_FILE': 'error.log',
+ 'NEWSPIDER_MODULE': 'itmedia.spiders',
+ 'SPIDER_MODULES': ['itmedia.spiders'],
+ 'USER_AGENT': 'itmedia+https://www.itmedia.co.jp/business/'}
+2021-06-11 12:12:14 [scrapy.extensions.telnet] INFO: Telnet Password: a16f3856c1176687
+2021-06-11 12:12:14 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-06-11 12:12:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itmedia.middlewares.ItmediaDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-11 12:12:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'itmedia.middlewares.ItmediaSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-11 12:12:14 [twisted] CRITICAL: Unhandled error in Deferred:
+2021-06-11 12:12:14 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/utils/misc.py", line 64, in load_object
+    obj = getattr(mod, name)
+AttributeError: module 'itmedia.pipelines' has no attribute 'MySQLPipeline'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xu/news/lib/python3.6/site-packages/twisted/internet/defer.py", line 1445, in _inlineCallbacks
+    result = current_context.run(g.send, result)
+  File "/home/xu/news/lib/python3.6/site-packages/twisted/internet/defer.py", line 47, in run
+    return f(*args, **kwargs)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/crawler.py", line 87, in crawl
+    self.engine = self._create_engine()
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/crawler.py", line 101, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/core/engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/core/scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/utils/misc.py", line 66, in load_object
+    raise NameError(f"Module '{module}' doesn't define any object named '{name}'")
+NameError: Module 'itmedia.pipelines' doesn't define any object named 'MySQLPipeline'
+2021-06-11 12:12:36 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: itmedia)
+2021-06-11 12:12:36 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.5 (default, Dec  4 2020, 11:17:20) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid
+2021-06-11 12:12:36 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-06-11 12:12:36 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'itmedia',
+ 'COOKIES_DEBUG': True,
+ 'LOG_FILE': 'error.log',
+ 'NEWSPIDER_MODULE': 'itmedia.spiders',
+ 'SPIDER_MODULES': ['itmedia.spiders'],
+ 'USER_AGENT': 'itmedia+https://www.itmedia.co.jp/business/'}
+2021-06-11 12:12:36 [scrapy.extensions.telnet] INFO: Telnet Password: 01beff928b8d0e73
+2021-06-11 12:12:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-06-11 12:12:36 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itmedia.middlewares.ItmediaDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-11 12:12:36 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'itmedia.middlewares.ItmediaSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-11 12:12:36 [scrapy.middleware] INFO: Enabled item pipelines:
+['itmedia.pipelines.ItmediaPipeline']
+2021-06-11 12:12:36 [scrapy.core.engine] INFO: Spider opened
+2021-06-11 12:12:36 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2021-06-11 12:12:36 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method CoreStats.spider_closed of <scrapy.extensions.corestats.CoreStats object at 0x7f68b66bb208>>
+Traceback (most recent call last):
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+mysql.connector.errors.NotSupportedError: Authentication plugin 'caching_sha2_password' is not supported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/utils/defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/home/xu/news/lib/python3.6/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/extensions/corestats.py", line 31, in spider_closed
+    elapsed_time = finish_time - self.start_time
+TypeError: unsupported operand type(s) for -: 'datetime.datetime' and 'NoneType'
+2021-06-11 12:12:36 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'log_count/ERROR': 1, 'log_count/INFO': 8}
+2021-06-11 12:12:36 [scrapy.core.engine] INFO: Spider closed (shutdown)
+2021-06-11 12:12:36 [twisted] CRITICAL: Unhandled error in Deferred:
+2021-06-11 12:12:36 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/home/xu/news/lib/python3.6/site-packages/twisted/internet/defer.py", line 1445, in _inlineCallbacks
+    result = current_context.run(g.send, result)
+  File "/home/xu/news/lib/python3.6/site-packages/twisted/internet/defer.py", line 47, in run
+    return f(*args, **kwargs)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/crawler.py", line 89, in crawl
+    yield self.engine.open_spider(self.spider, start_requests)
+mysql.connector.errors.NotSupportedError: Authentication plugin 'caching_sha2_password' is not supported
+2021-06-11 12:14:02 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: itmedia)
+2021-06-11 12:14:02 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.5 (default, Dec  4 2020, 11:17:20) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid
+2021-06-11 12:14:02 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-06-11 12:14:02 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'itmedia',
+ 'COOKIES_DEBUG': True,
+ 'LOG_FILE': 'error.log',
+ 'NEWSPIDER_MODULE': 'itmedia.spiders',
+ 'SPIDER_MODULES': ['itmedia.spiders'],
+ 'USER_AGENT': 'itmedia+https://www.itmedia.co.jp/business/'}
+2021-06-11 12:14:02 [scrapy.extensions.telnet] INFO: Telnet Password: 9acda3c1174e8224
+2021-06-11 12:14:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-06-11 12:14:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itmedia.middlewares.ItmediaDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-11 12:14:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'itmedia.middlewares.ItmediaSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-11 12:14:02 [scrapy.middleware] INFO: Enabled item pipelines:
+['itmedia.pipelines.ItmediaPipeline']
+2021-06-11 12:14:02 [scrapy.core.engine] INFO: Spider opened
+2021-06-11 12:14:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-06-11 12:14:02 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:14:02 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:14:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-06-11 12:14:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.itmedia.co.jp/business/> (referer: None)
+2021-06-11 12:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:14:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:14:05 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-06-11 12:14:05 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 322,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 25018,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.194851,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 6, 11, 3, 14, 5, 174496),
+ 'httpcompression/response_bytes': 84261,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 12,
+ 'memusage/max': 61239296,
+ 'memusage/startup': 61239296,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 6, 11, 3, 14, 2, 979645)}
+2021-06-11 12:14:05 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-06-11 12:51:21 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: itmedia)
+2021-06-11 12:51:21 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.5 (default, Dec  4 2020, 11:17:20) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid
+2021-06-11 12:51:21 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-06-11 12:51:21 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'itmedia',
+ 'COOKIES_DEBUG': True,
+ 'LOG_FILE': 'error.log',
+ 'NEWSPIDER_MODULE': 'itmedia.spiders',
+ 'SPIDER_MODULES': ['itmedia.spiders'],
+ 'USER_AGENT': 'itmedia+https://www.itmedia.co.jp/business/'}
+2021-06-11 12:51:21 [scrapy.extensions.telnet] INFO: Telnet Password: 603401e1b3c6c9cd
+2021-06-11 12:51:21 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-06-11 12:51:21 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itmedia.middlewares.ItmediaDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-11 12:51:21 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'itmedia.middlewares.ItmediaSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-11 12:51:21 [twisted] CRITICAL: Unhandled error in Deferred:
+2021-06-11 12:51:21 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/home/xu/news/lib/python3.6/site-packages/twisted/internet/defer.py", line 1445, in _inlineCallbacks
+    result = current_context.run(g.send, result)
+  File "/home/xu/news/lib/python3.6/site-packages/twisted/internet/defer.py", line 47, in run
+    return f(*args, **kwargs)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/crawler.py", line 87, in crawl
+    self.engine = self._create_engine()
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/crawler.py", line 101, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/core/engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/core/scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/utils/misc.py", line 61, in load_object
+    mod = import_module(module)
+  File "/home/xu/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xu/itmedia/itmedia/pipelines.py", line 19
+    self.db.close()
+                  ^
+TabError: inconsistent use of tabs and spaces in indentation
+2021-06-11 12:51:57 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: itmedia)
+2021-06-11 12:51:57 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.5 (default, Dec  4 2020, 11:17:20) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid
+2021-06-11 12:51:57 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-06-11 12:51:57 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'itmedia',
+ 'COOKIES_DEBUG': True,
+ 'LOG_FILE': 'error.log',
+ 'NEWSPIDER_MODULE': 'itmedia.spiders',
+ 'SPIDER_MODULES': ['itmedia.spiders'],
+ 'USER_AGENT': 'itmedia+https://www.itmedia.co.jp/business/'}
+2021-06-11 12:51:57 [scrapy.extensions.telnet] INFO: Telnet Password: 81b9234c6e4de95d
+2021-06-11 12:51:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-06-11 12:51:57 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itmedia.middlewares.ItmediaDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-11 12:51:57 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'itmedia.middlewares.ItmediaSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-11 12:51:57 [scrapy.middleware] INFO: Enabled item pipelines:
+['itmedia.pipelines.ItmediaPipeline']
+2021-06-11 12:51:57 [scrapy.core.engine] INFO: Spider opened
+2021-06-11 12:51:57 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-06-11 12:51:57 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:51:57 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:51:57 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-06-11 12:51:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.itmedia.co.jp/business/> (referer: None)
+2021-06-11 12:51:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:51:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:51:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:51:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:51:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:51:59 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-06-11 12:51:59 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 322,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 24952,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.21552,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 6, 11, 3, 51, 59, 540085),
+ 'httpcompression/response_bytes': 84270,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 12,
+ 'memusage/max': 61194240,
+ 'memusage/startup': 61194240,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 6, 11, 3, 51, 57, 324565)}
+2021-06-11 12:51:59 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-06-11 12:54:56 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: itmedia)
+2021-06-11 12:54:56 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.5 (default, Dec  4 2020, 11:17:20) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid
+2021-06-11 12:54:56 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-06-11 12:54:56 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'itmedia',
+ 'COOKIES_DEBUG': True,
+ 'LOG_FILE': 'error.log',
+ 'NEWSPIDER_MODULE': 'itmedia.spiders',
+ 'SPIDER_MODULES': ['itmedia.spiders'],
+ 'USER_AGENT': 'itmedia+https://www.itmedia.co.jp/business/'}
+2021-06-11 12:54:56 [scrapy.extensions.telnet] INFO: Telnet Password: 4d56cc6119169989
+2021-06-11 12:54:56 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-06-11 12:54:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itmedia.middlewares.ItmediaDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-11 12:54:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'itmedia.middlewares.ItmediaSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-11 12:54:56 [scrapy.middleware] INFO: Enabled item pipelines:
+['itmedia.pipelines.ItmediaPipeline']
+2021-06-11 12:54:56 [scrapy.core.engine] INFO: Spider opened
+2021-06-11 12:54:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-06-11 12:54:56 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:54:56 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:54:56 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-06-11 12:54:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.itmedia.co.jp/business/> (referer: None)
+2021-06-11 12:54:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:54:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:54:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:54:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:54:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:54:58 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-06-11 12:54:58 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 322,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 24952,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.204312,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 6, 11, 3, 54, 58, 884182),
+ 'httpcompression/response_bytes': 84270,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 12,
+ 'memusage/max': 61140992,
+ 'memusage/startup': 61140992,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 6, 11, 3, 54, 56, 679870)}
+2021-06-11 12:54:58 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-06-11 12:57:47 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: itmedia)
+2021-06-11 12:57:47 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.5 (default, Dec  4 2020, 11:17:20) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid
+2021-06-11 12:57:47 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-06-11 12:57:47 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'itmedia',
+ 'COOKIES_DEBUG': True,
+ 'LOG_FILE': 'error.log',
+ 'NEWSPIDER_MODULE': 'itmedia.spiders',
+ 'SPIDER_MODULES': ['itmedia.spiders'],
+ 'USER_AGENT': 'itmedia+https://www.itmedia.co.jp/business/'}
+2021-06-11 12:57:47 [scrapy.extensions.telnet] INFO: Telnet Password: c9cf24c636235358
+2021-06-11 12:57:47 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-06-11 12:57:47 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itmedia.middlewares.ItmediaDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-11 12:57:47 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'itmedia.middlewares.ItmediaSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-11 12:57:47 [scrapy.middleware] INFO: Enabled item pipelines:
+['itmedia.pipelines.ItmediaPipeline']
+2021-06-11 12:57:47 [scrapy.core.engine] INFO: Spider opened
+2021-06-11 12:57:47 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-06-11 12:57:47 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:57:47 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:57:47 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-06-11 12:57:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.itmedia.co.jp/business/> (referer: None)
+2021-06-11 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:57:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:57:49 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-06-11 12:57:49 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 322,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 27827,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.198056,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 6, 11, 3, 57, 49, 381831),
+ 'httpcompression/response_bytes': 84270,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 12,
+ 'memusage/max': 61243392,
+ 'memusage/startup': 61243392,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 6, 11, 3, 57, 47, 183775)}
+2021-06-11 12:57:49 [scrapy.core.engine] INFO: Spider closed (finished)
+2021-06-11 12:58:57 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: itmedia)
+2021-06-11 12:58:57 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.5 (default, Dec  4 2020, 11:17:20) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid
+2021-06-11 12:58:57 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-06-11 12:58:57 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'itmedia',
+ 'COOKIES_DEBUG': True,
+ 'LOG_FILE': 'error.log',
+ 'NEWSPIDER_MODULE': 'itmedia.spiders',
+ 'SPIDER_MODULES': ['itmedia.spiders'],
+ 'USER_AGENT': 'itmedia+https://www.itmedia.co.jp/business/'}
+2021-06-11 12:58:57 [scrapy.extensions.telnet] INFO: Telnet Password: 2ab498dd45e59490
+2021-06-11 12:58:57 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-06-11 12:58:58 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itmedia.middlewares.ItmediaDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-11 12:58:58 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'itmedia.middlewares.ItmediaSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-11 12:58:58 [twisted] CRITICAL: Unhandled error in Deferred:
+2021-06-11 12:58:58 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/home/xu/news/lib/python3.6/site-packages/twisted/internet/defer.py", line 1445, in _inlineCallbacks
+    result = current_context.run(g.send, result)
+  File "/home/xu/news/lib/python3.6/site-packages/twisted/internet/defer.py", line 47, in run
+    return f(*args, **kwargs)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/crawler.py", line 87, in crawl
+    self.engine = self._create_engine()
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/crawler.py", line 101, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/core/engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/core/scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "/home/xu/news/lib/python3.6/site-packages/scrapy/utils/misc.py", line 61, in load_object
+    mod = import_module(module)
+  File "/home/xu/.pyenv/versions/3.6.5/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 781, in get_code
+  File "<frozen importlib._bootstrap_external>", line 741, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/xu/itmedia/itmedia/pipelines.py", line 28
+    self.cursor.execute(query tuple([title, link]))
+                                  ^
+SyntaxError: invalid syntax
+2021-06-11 12:59:06 [scrapy.utils.log] INFO: Scrapy 2.5.0 started (bot: itmedia)
+2021-06-11 12:59:06 [scrapy.utils.log] INFO: Versions: lxml 4.6.3.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 21.2.0, Python 3.6.5 (default, Dec  4 2020, 11:17:20) - [GCC 9.3.0], pyOpenSSL 20.0.1 (OpenSSL 1.1.1k  25 Mar 2021), cryptography 3.4.7, Platform Linux-5.8.0-55-generic-x86_64-with-debian-bullseye-sid
+2021-06-11 12:59:06 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2021-06-11 12:59:06 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'itmedia',
+ 'COOKIES_DEBUG': True,
+ 'LOG_FILE': 'error.log',
+ 'NEWSPIDER_MODULE': 'itmedia.spiders',
+ 'SPIDER_MODULES': ['itmedia.spiders'],
+ 'USER_AGENT': 'itmedia+https://www.itmedia.co.jp/business/'}
+2021-06-11 12:59:06 [scrapy.extensions.telnet] INFO: Telnet Password: 2b97d6f0daea7fb2
+2021-06-11 12:59:06 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2021-06-11 12:59:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'itmedia.middlewares.ItmediaDownloaderMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-06-11 12:59:07 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'itmedia.middlewares.ItmediaSpiderMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-06-11 12:59:07 [scrapy.middleware] INFO: Enabled item pipelines:
+['itmedia.pipelines.ItmediaPipeline']
+2021-06-11 12:59:07 [scrapy.core.engine] INFO: Spider opened
+2021-06-11 12:59:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-06-11 12:59:07 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:59:07 [itmedia] INFO: Spider opened: itmedia
+2021-06-11 12:59:07 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-06-11 12:59:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.itmedia.co.jp/business/> (referer: None)
+2021-06-11 12:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:59:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.itmedia.co.jp/business/>
+None
+2021-06-11 12:59:09 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-06-11 12:59:09 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 322,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 27827,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.246375,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 6, 11, 3, 59, 9, 298819),
+ 'httpcompression/response_bytes': 84270,
+ 'httpcompression/response_count': 1,
+ 'item_scraped_count': 5,
+ 'log_count/DEBUG': 6,
+ 'log_count/INFO': 12,
+ 'memusage/max': 61243392,
+ 'memusage/startup': 61243392,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2021, 6, 11, 3, 59, 7, 52444)}
+2021-06-11 12:59:09 [scrapy.core.engine] INFO: Spider closed (finished)

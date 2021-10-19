@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_common %}
+    <!-- Specific Page Vendor CSS -->
+    <link rel="stylesheet" href="{% static 'vendor/jquery-ui/css/ui-lightness/jquery-ui-1.10.4.custom.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap-multiselect/bootstrap-multiselect.css' %}" />
+    <link rel="stylesheet" href="{% static 'vendor/morris/morris.css' %}" />
+
+<!-- <link href="{% static 'css/saas.css' %}" rel="stylesheet" /> -->
+<link href="{% static 'global/css/new-project.css' %}" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://rawgit.com/abdennour/bootstrap-waitingfor/master/build/bootstrap-waitingfor.js"></script>
+<!-- <script type="text/javascript" src="{% static 'js/base_saas.js' %}"></script> -->
+
+<style>
+    .node rect {
+        cursor: pointer;
+        fill: #fff;
+        fill-opacity: 0.5;
+        stroke: #3182bd;
+        stroke-width: 1.5px;
+    }
+
+    .node text {
+        font: 10px sans-serif;
+        pointer-events: none;
+    }
+
+    .link {
+        fill: none;
+        stroke: #9ecae1;
+        stroke-width: 1.5px;
+    }
+
+    #protovis {
+        max-width: 30em;
+        min-height: 15em;
+        /*height: 30em;*/
+        overflow: auto;
+    }
+</style>
+
+{% endblock %}
+
+
+
+{% block content %}
+<section role="main" class="content-body">
+    <div class="row">
+        <div class="card card-header0" id="user_card">
+            <div class="card-body first-card">
+                <div id="start_div1" style="margin: auto;">
+                    <div class="card-header1"><span id="myButton">"URL Setting"</span></div>
+                    <div>"Please open a new tab and go to the data extration url then copy paste the url below here."</div>
+                </div>
+                <!-- login0 -->
+                <!-- Head0: Page0 -->
+                <div class="headStep">
+                    <span>
+                        <div class="card-header1">
+                            <span>"Data Extraction"</span>
+                            <span class="help">
+                                <i class="far fa-question-circle help_popup" id="help-data" onclick="helpPopup('help-data');"></i>
+                                <div class="popup_text">
+                                </div>
+                            </span>
+                        </div>
+                        <div>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    
+        <!-- <div style="padding-right: 0.75rem !important;"> -->
+                <!-- Collapsable Card Example -->
+                <!-- iframe -->
+                <div class="card shadow mb-4 nopadding">
+                        <div class="nopadding">
+                                <!-- Priya -->
+                                <div class="search_container">
+                                    <div class="search_row">
+                                        <!-- <div class="search_column left">
+                                            <span class="search_dot" style="background:#ED594A;"></span>
+                                            <span class="search_dot" style="background:#FDD800;"></span>
+                                            <span class="search_dot" style="background:#5AC05A;"></span>
+                                        </div> -->
+                                        <div class="search_column left">
+                                            <div style="float: right;"> 
+                                                <i class='fab fa-internet-explorer'></i>
+                                            </div>
+                                        </div>
+                                        <div class="search_column middle">
+                                            <input id="search_input" type="text" value="https://ww" disabled>
+                                        </div>
+                                        <div class="search_column right">
+                                            <!--<div style="float:left;">-->
+                                                <!--<i class='fas fa-search'></i>-->
+                                            <!--</div>-->
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="aboveIframe" class="embed-responsive embed-responsive-16by9 nopadding" style="padding: 0px 0px 0px 0px;">
+                            <iframe id="iframe" class="embed-responsive-item" allowfullscreen></iframe>
+                        </div>
+                </div>
+                <!--</div>-->
+
+        <!-- </div> -->
+    </div>
+</section>  
+{% endblock %}
+
+{% block js_common %}
+    <!-- Specific Page Vendor -->
+    <script src="{% static 'vendor/jquery-ui/js/jquery-ui-1.10.4.custom.js' %}"></script>
+    <script src="{% static 'vendor/jquery-ui-touch-punch/jquery.ui.touch-punch.js' %}"></script>
+    <script src="{% static 'vendor/jquery-appear/jquery.appear.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap-multiselect/bootstrap-multiselect.js' %}"></script>
+    <script src="{% static 'vendor/jquery-easypiechart/jquery.easypiechart.js' %}"></script>
+    <script src="{% static 'vendor/flot/jquery.flot.js' %}"></script>
+    <script src="{% static 'vendor/flot-tooltip/jquery.flot.tooltip.js' %}"></script>
+    <script src="{% static 'vendor/flot/jquery.flot.pie.js' %}"></script>
+    <script src="{% static 'vendor/flot/jquery.flot.categories.js' %}"></script>
+    <script src="{% static 'vendor/flot/jquery.flot.resize.js' %}"></script>
+    <script src="{% static 'vendor/jquery-sparkline/jquery.sparkline.js' %}"></script>
+    <script src="{% static 'vendor/raphael/raphael.js' %}"></script>
+    <script src="{% static 'vendor/morris/morris.js' %}"></script>
+    <script src="{% static 'vendor/gauge/gauge.js' %}"></script>
+    <script src="{% static 'vendor/snap-svg/snap.svg.js' %}"></script>
+    <script src="{% static 'vendor/liquid-meter/liquid.meter.js' %}"></script>
+    <script src="{% static 'vendor/jqvmap/jquery.vmap.js' %}"></script>
+    <script src="{% static 'vendor/jqvmap/data/jquery.vmap.sampledata.js' %}"></script>
+    <script src="{% static 'vendor/jqvmap/maps/jquery.vmap.world.js' %}"></script>
+    <script src="{% static 'vendor/jqvmap/maps/continents/jquery.vmap.africa.js' %}"></script>
+    <script src="{% static 'vendor/jqvmap/maps/continents/jquery.vmap.asia.js' %}"></script>
+    <script src="{% static 'vendor/jqvmap/maps/continents/jquery.vmap.australia.js' %}"></script>
+    <script src="{% static 'vendor/jqvmap/maps/continents/jquery.vmap.europe.js' %}"></script>
+    <script src="{% static 'vendor/jqvmap/maps/continents/jquery.vmap.north-america.js' %}"></script>
+    <script src="{% static 'vendor/jqvmap/maps/continents/jquery.vmap.south-america.js' %}"></script>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/dashboard/examples.dashboard.js' %}"></script>
+{% endblock %}

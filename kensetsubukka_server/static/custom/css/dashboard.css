@@ -1,0 +1,134 @@
+.logs {
+    background-color: black;
+    margin-top: 15%;
+    margin-left: 20%;
+    margin-right: 20%;
+    color:white;
+}
+
+.logs-head {
+    opacity: 1;
+}
+
+.logs-heading {
+    font-size: 1.5vw;
+    font-weight: 800;
+    background-color: #000;
+    color: #fff;
+    display: block;
+    padding: .5em;
+    margin-left: 1.2%;
+}
+
+.my-custom-scrollbar {
+    position: relative;
+    height: 250px;
+    overflow: auto;
+    margin-right: 2%; 
+    margin-left: 2%;
+}
+
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+#request_table {
+    /* collapsed, because the bottom shadow on thead tr is hidden otherwise */
+    border-collapse: collapse;
+    color: black;
+}
+/* Shadow on the header row*/
+thead tr   { 
+    box-shadow: 0 1px 5px #000000; 
+    background-color: #393e46;
+    color: snow;
+    /* text-align: center; */
+}
+/* Background colors defined on table cells */
+/* th         { background-color: #ccc; } */
+/* tr.even td { background-color: yellow; } */
+/* tr.odd td  { background-color: orange; } */
+
+.cancel_button {
+    border: 1px solid  #A9A9A9;;
+    background: #A9A9A9;
+    text-transform: uppercase;
+    color: white;
+    /* padding: 2px 32px; */
+    width: 100px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}
+
+/* span {
+    z-index: 20;  
+  } */
+
+.cancel_button::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -36px;
+    left: -100px;
+    background: white;
+    width: 50px;
+    height: 100px;
+    opacity: 20%;
+    transform: rotate(-45deg);
+}
+
+.cancel_button:hover:after {
+    left: 120%;
+    transition: all 3000ms cubic-bezier(0.3, 1, 0.2, 1);
+    -webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+}
+
+.download_button {
+    border: 1px solid #2ca559;
+    background: #2ca559;
+    text-transform: uppercase;
+    color: white;
+    /* padding: 2px 20px; */
+    width: 100px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    font-size: small;
+}
+
+/* span {
+    z-index: 20;  
+  } */
+
+.download_button::after{
+    border: 1px solid gray;
+    content: '';
+    display: block;
+    position: absolute;
+    top: -36px;
+    left: -100px;
+    background: gray;
+    width: 50px;
+    height: 100px;
+    opacity: 20%;
+    transform: rotate(-45deg);
+}
+
+.download_button:hover:after {
+    left: 120%;
+    transition: all 3000ms cubic-bezier(0.3, 1, 0.2, 1);
+    -webkit-transition: all 600ms cubic-bezier(0.3, 1, 0.2, 1);
+}
+
+.disable_button {
+    border: 1px solid #eee;
+    background: #eee;
+    text-transform: uppercase;
+    color: black;
+    /* padding: 2px 32px; */
+    width: 100px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}

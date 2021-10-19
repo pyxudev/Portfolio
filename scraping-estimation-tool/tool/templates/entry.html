@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+	<section role="main" class="content-body">
+		{% include "common/header-right.html" with title="Website Entry" parent_dir="Analyze" child_dir="Dashboard" %}
+		<form method="POST" action="/view_web/">
+			{% csrf_token %}          
+			<label for="fname">Link</label>
+			<input type="text" id="link" name="link" placeholder="link of the page">
+
+			<label for="lname">Domain</label>
+			<input type="text" id="domain" name="domain" placeholder="example.com">
+			
+			 <input type="submit" value="Submit">
+		</form>
+
+</section>
+{% endblock content %}
+
+{% block js %}
+	  <script src="{% static 'js/dashboard/twitter_daily.js' %}"></script>
+{% endblock %}

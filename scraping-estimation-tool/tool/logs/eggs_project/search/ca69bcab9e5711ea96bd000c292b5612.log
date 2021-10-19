@@ -1,0 +1,114 @@
+2020-05-25 00:17:37 [scrapy.utils.log] INFO: Scrapy 2.0.1 started (bot: eggs_project)
+2020-05-25 00:17:37 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.6.9 (default, Apr 18 2020, 01:56:04) - [GCC 8.4.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1f  31 Mar 2020), cryptography 2.9, Platform Linux-5.3.0-53-generic-x86_64-with-Ubuntu-18.04-bionic
+2020-05-25 00:17:37 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2020-05-25 00:17:37 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'eggs_project',
+ 'COOKIES_ENABLED': False,
+ 'LOG_FILE': 'logs/eggs_project/search/ca69bcab9e5711ea96bd000c292b5612.log',
+ 'NEWSPIDER_MODULE': 'eggs_project.spiders',
+ 'SPIDER_MODULES': ['eggs_project.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) '
+               'Gecko/20100101 Firefox/75.0'}
+2020-05-25 00:17:37 [scrapy.extensions.telnet] INFO: Telnet Password: 621f26363e1fc6ae
+2020-05-25 00:17:37 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-05-25 00:17:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2020-05-25 00:17:41 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:42 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2020-05-25 00:17:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-05-25 00:17:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-05-25 00:17:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-05-25 00:17:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2020-05-25 00:17:48 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2020-05-25 00:17:49 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:54 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:54 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:56 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:56 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2020-05-25 00:17:56 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:56 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:57 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:57 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:17:58 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-05-25 00:18:00 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2020-05-25 00:18:00 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-05-25 00:18:04 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:18:04 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:18:06 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-05-25 00:18:07 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:18:08 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-05-25 00:18:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-05-25 00:18:09 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-05-25 00:18:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-25 00:18:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2020-05-25 00:18:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-25 00:18:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-25 00:18:10 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2020-05-25 00:18:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-25 00:18:11 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:18:12 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-25 00:18:12 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-25 00:18:12 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2020-05-25 00:18:12 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-25 00:18:13 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2020-05-25 00:18:14 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'eggs_project.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-05-25 00:18:14 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-05-25 00:18:15 [twisted] CRITICAL: Unhandled error in Deferred:
+2020-05-25 00:18:15 [twisted] CRITICAL: 
+Traceback (most recent call last):
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/twisted/internet/defer.py", line 1418, in _inlineCallbacks
+    result = g.send(result)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/crawler.py", line 89, in crawl
+    self.engine = self._create_engine()
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/crawler.py", line 103, in _create_engine
+    return ExecutionEngine(self, lambda _: self.stop())
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/engine.py", line 70, in __init__
+    self.scraper = Scraper(crawler)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/core/scraper.py", line 71, in __init__
+    self.itemproc = itemproc_cls.from_crawler(crawler)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/middleware.py", line 53, in from_crawler
+    return cls.from_settings(crawler.settings, crawler)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/middleware.py", line 34, in from_settings
+    mwcls = load_object(clspath)
+  File "/home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/misc.py", line 50, in load_object
+    mod = import_module(module)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 951, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 894, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1157, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1131, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1112, in _legacy_get_spec
+  File "<frozen importlib._bootstrap>", line 441, in spec_from_loader
+  File "<frozen importlib._bootstrap_external>", line 544, in spec_from_file_location
+  File "/tmp/eggs_project-1590390876-_ktolbtz.egg/eggs_project/pipelines.py", line 43
+    def process_item(self, item, spider):
+                                        ^
+IndentationError: unindent does not match any outer indentation level

@@ -1,0 +1,10 @@
+{% extends "base-accounts.html" %}
+{% load static %}
+
+{% block body_accounts %}
+<form action="{% url "accounts:login" %}" method="POST">
+    {% csrf_token %}
+    {% include "common/accounts-content.html" with title="本登録完了のお知らせ" text="本登録が完了しました。登録されたメールアドレスとパスワードでログインしてください。" %}
+    {% include "common/accounts-button.html" with name="Login" %}
+</form>
+{% endblock %}

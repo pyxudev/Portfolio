@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block js%}
+<script type="text/javascript" src="{% static 'js/domain.js' %}"></script>
+{% endblock %}
+
+
+{% block content %}
+<section role="main" class="content-body">
+    {% include "common/header-right.html" with title="Domains" parent_dir="Tables" child_dir="Basic" %}
+    
+    <div class="row">
+        
+        <div class="col-md-6">
+            <section class="panel">
+                <header class="panel-heading">
+                    <div class="panel-actions">
+                        <a href="#" class="fa fa-caret-down"></a>
+                        <!-- <a href="#" class="fa fa-times"></a> -->
+                    </div>
+
+                    <h2 class="panel-title">Domain Information</h2>
+                </header>
+                <div class="panel-body">
+                    <div class="table-responsive">
+                        <table class="table table-hover mb-none">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Domain name</th>
+                                    <th>Webscan report</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {%  for domain in domain_list %}
+                                <tr>
+                                    <td>{{forloop.counter0|add:1}}</td>
+                                    <td>{{domain.domain}}</td>
+                                    <td class="actions-hover actions-fade" onclick="openWebScanView('{{domain.domain}}');">
+                                        {{domain.domain}}_report &nbsp;
+                                        <a href="" ><i class="fa fa-file fa-lg" ></i></a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+

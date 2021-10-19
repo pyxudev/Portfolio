@@ -1,0 +1,118 @@
+2020-05-26 02:38:49 [scrapy.utils.log] INFO: Scrapy 2.0.1 started (bot: eggs_project)
+2020-05-26 02:38:49 [scrapy.utils.log] INFO: Versions: lxml 4.5.0.0, libxml2 2.9.10, cssselect 1.1.0, parsel 1.5.2, w3lib 1.21.0, Twisted 20.3.0, Python 3.6.9 (default, Apr 18 2020, 01:56:04) - [GCC 8.4.0], pyOpenSSL 19.1.0 (OpenSSL 1.1.1f  31 Mar 2020), cryptography 2.9, Platform Linux-5.3.0-53-generic-x86_64-with-Ubuntu-18.04-bionic
+2020-05-26 02:38:49 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+2020-05-26 02:38:49 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'eggs_project',
+ 'COOKIES_ENABLED': False,
+ 'LOG_FILE': 'logs/eggs_project/artist/b24d32409f3411ea96bd000c292b5612.log',
+ 'NEWSPIDER_MODULE': 'eggs_project.spiders',
+ 'SPIDER_MODULES': ['eggs_project.spiders'],
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:75.0) '
+               'Gecko/20100101 Firefox/75.0'}
+2020-05-26 02:38:49 [scrapy.extensions.telnet] INFO: Telnet Password: d95656a50a2854fb
+2020-05-26 02:38:49 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.memusage.MemoryUsage',
+ 'scrapy.extensions.logstats.LogStats']
+2020-05-26 02:38:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2020-05-26 02:38:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2020-05-26 02:38:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-05-26 02:38:50 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:51 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2020-05-26 02:38:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2020-05-26 02:38:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2020-05-26 02:38:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-05-26 02:38:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2020-05-26 02:38:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-05-26 02:38:52 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2020-05-26 02:38:53 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2020-05-26 02:38:53 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'eggs_project.middlewares.ProxyMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2020-05-26 02:38:53 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2020-05-26 02:38:53 [scrapy.middleware] INFO: Enabled item pipelines:
+['eggs_project.pipelines.EggsPipeline']
+2020-05-26 02:38:53 [scrapy.core.engine] INFO: Spider opened
+2020-05-26 02:38:53 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2020-05-26 02:38:53 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2020-05-26 02:38:53 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+2020-05-26 02:38:53 [py.warnings] WARNING: /home/sandy/Desktop/set_project/my_env/lib/python3.6/site-packages/scrapy/utils/project.py:94: ScrapyDeprecationWarning: Use of environment variables prefixed with SCRAPY_ to override settings is deprecated. The following environment variables are currently defined: JOB, LOG_FILE, SLOT, SPIDER
+  ScrapyDeprecationWarning
+
+2020-05-26 02:38:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://eggs.mu/artist/peeto> (referer: None)
+2020-05-26 02:38:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://eggs.mu/artist/peeto>
+{'artist': {"artist_id": "peeto", "eggs_id": "peeto", "date": "2020/05/26", "artist_name": "peeto", "region": "CHIBA", "genre": "ポップ/R&B", "profile": "2017 年3 月に結成されたVo&Gt 野田択也 / Gt 鮨朗 / Ba Gun / Dr Koto からなる、平均年齢23 歳の千葉県柏発”peeto”\r\n\r\nブラックミュージックやR&B、Hip-Hopなど様々なジャンルをルーツに持ち、Vo.野田の天性の歌声によって現代に引き寄せられたpeeto 的”NewAgeTownSounds”。", "followers": 51, "artist_play_count": 1300, "artist_photo_url": "http://resource.lap.recochoku.jp/e8/image/d0b5a5b990441caa0c935b42d0ad23d4_900_600.jpg", "website_url": "http://athers-music.com/peeto/", "twitter_url": "http://twitter.com/peeto_official", "base_genre": "pop", "song_ids": ["fe64673d96273b7cc7353523c9f4c74bc5e6ea7ce73d347addc5c7f1334f9327", "b1c962053394560800be8b3da8999f9f7557fe21402515dd245822e95749446a", "24b715da3dfc2598cd45882cb2d271cb8bc18501399115b1579cd9142a2479e4"], "_is_new": false, "_is_loaded": true, "_is_load_empty": false, "_modified": null, "_data": {}, "modified": 1590485936.8637967},
+ 'error': None,
+ 'unique_id': '7f001f3a-9272-4b61-9a9c-2f4a6920f4d1'}
+2020-05-26 02:38:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2020-05-26 02:38:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 287,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 12310,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 2.923966,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2020, 5, 26, 9, 38, 56, 865814),
+ 'item_scraped_count': 1,
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 46,
+ 'memusage/max': 65634304,
+ 'memusage/startup': 65634304,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2020, 5, 26, 9, 38, 53, 941848)}
+2020-05-26 02:38:56 [scrapy.core.engine] INFO: Spider closed (finished)

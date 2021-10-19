@@ -1,0 +1,19 @@
+{% extends "base-accounts.html" %}
+{% load static %}
+{% load i18n %}
+{% block body_accounts %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {% include "common/accounts-form.html" %}
+    <div class="form-group mb-lg">
+        <a href="{% url "accounts:password_reset" %}" class="pull-right">{% trans "Lost Password?" %}</a>
+    </div>
+    {% trans "Remember Me" as login_text %}
+    {% trans "Login" as btn_text %}
+    {% include "common/accounts-checkbox.html" with label_text=login_text button=btn_text %}
+    <!-- {% include "common/accounts-sns.html" %} -->
+    {% trans "Signup" as link_text %}
+    {% trans "Don't have an account yet?" as nopass_text %}
+    {% include "common/accounts-p.html" with name=link_text href="../signup" text=nopass_text %}
+</form>
+{% endblock %}

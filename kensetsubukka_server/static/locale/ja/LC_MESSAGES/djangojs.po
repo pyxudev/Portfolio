@@ -1,0 +1,31 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: static/vendor/fullcalendar/fullcalendar.min.js:7
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-10-23 16:59+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: static/js/dashboard/examples.dashboard.js:9
+msgid "Are you Sure"
+msgstr "本気ですか"
+
+#~ msgid ""
+#~ "There is an ongoing request. Starting new request will cancel the old "
+#~ "request. Are you Sure?"
+#~ msgstr ""
+#~ "古い進行中のリクエストがあります。 新しいリクエストを開始すると、古いリク"
+#~ "エストはキャンセルされます。 本気ですか？"

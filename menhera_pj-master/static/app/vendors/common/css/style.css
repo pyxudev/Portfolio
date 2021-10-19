@@ -1,0 +1,156 @@
+.header-bg {
+    width: 100%;
+
+    background: #936;
+}
+.nav-link {
+    display: inline-block;
+}
+.tags {
+    display: inline;
+}
+.bg-pink {
+    background-color: #906;
+}
+.navbar-brand span {
+    color: #fff;
+}
+.nav-item span {
+    margin: 0 10px;
+
+    color: #fff;
+}
+.nav-item img {
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+}
+.nav-item:hover {
+    color: #fff;
+    border-bottom: solid 6px #fff;
+    background-color: #ff82b2;
+}
+side {
+    float: left;
+    width: 10%;
+    height: 100%;
+    padding: 3% auto;
+
+    color: #565656;
+    background: #f9c;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .32);
+}
+.side_text {
+    color: #fff;
+}
+.block {
+    position: relative;
+}
+.space-10 {
+    height: 10px;
+}
+.space-5 {
+    height: 5px;
+}
+.bg {
+    width: 100%;
+
+    background-color: #da70d6;
+}
+.container {
+    padding: 0 10%;
+}
+.title {
+    padding-top: 2%;
+    margin: 0 auto;
+}
+.content {
+    display: inline-block;
+    width: 100%;
+    padding: .2em .5em;
+    margin: 1em 0;
+
+    color: #565656;
+    background: #fff;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .32);
+}
+.bx-wrapper {
+    width: 60%;
+}
+.rank_box {
+    display: inline-block;
+    width: 80%;
+    height: 3%;
+    padding: 1px;
+    margin: 1px auto;
+
+    border: 1px solid black;
+}
+.rank_box_1 {
+    display: inline-block;
+    width: 90%;
+    height: 6%;
+    padding: 1px;
+    margin: 1px auto;
+
+    border: 1px solid black;
+}
+.rank_box_2 {
+    display: inline-block;
+    width: 85%;
+    height: 5%;
+    padding: 1px;
+    margin: 1px auto;
+
+    border: 1px solid black;
+}
+.rank_box_3 {
+    display: inline-block;
+    width: 82%;
+    height: 4%;
+    padding: 1px;
+    margin: 1px auto;
+
+    border: 1px solid black;
+}
+#carouselExampleIndicators {
+    width: 100%;
+}
+footer {
+    height: 180px;
+    margin-left: 10%;
+
+    border: 1px solid;
+    background: #696969;
+}
+.footer_left {
+    display: inline-block;
+    width: 40%;
+    padding-bottom: 30px;
+    margin-left: 10%;
+
+    color: #fff;
+}
+.footer_right {
+    display: inline-block;
+    width: 30%;
+    padding-bottom: 30px;
+    padding-left: 10px;
+
+    color: #fff;
+}
+
+.footer_inner {
+    display: inline-block;
+}
+footer a {
+    text-decoration: none;
+
+    color: #a9a9a9;
+}
+footer a:hover {
+    text-decoration: none;
+
+    color: #a9a9a9;
+}
