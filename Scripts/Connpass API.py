@@ -3,10 +3,10 @@ import requests
 import json
 
 db = mysql.connector.connect(
-	user='pigdata_extra',
-	passwd='pig0831',
-	host='rds-aurora-cluster.cluster-cw2qkc1hesa1.ap-southeast-2.rds.amazonaws.com',
-	db='pigdata_extra',
+	user='user',
+	passwd='password',
+	host='host',
+	db='db',
 	auth_plugin='mysql_native_password'
 )
 cursor = db.cursor()
