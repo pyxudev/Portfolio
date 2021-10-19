@@ -28,7 +28,7 @@ tags                  = []
 cats                  = []
 
 for i in range(1, 8):
-	page_link         = "https://services.sms-datatech.co.jp/pig-data/wp-admin/edit.php?paged=" + str(i)
+	page_link         = "https://*****/wp-admin/edit.php?paged=" + str(i)
 	driver.get(page_link)
 	time.sleep(2)
 	trs               = driver.find_elements_by_css_selector("#the-list > tr")
