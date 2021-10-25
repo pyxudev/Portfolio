@@ -5,5 +5,5 @@ echo 'Subject: daily_mail' >> /home/ubuntu/scripts/daily_mail.txt
 /usr/bin/python3 /home/ubuntu/scripts/daily_mail.py
 cat /home/ubuntu/scripts/email_content.txt | while read line
 do
-	echo $line
+	echo $line >> /home/ubuntu/scripts/daily_mail.txt
 done
