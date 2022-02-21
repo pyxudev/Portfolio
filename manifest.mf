@@ -1,0 +1,2 @@
+Permissions: all-permissions
+Main-Class: SwingSample

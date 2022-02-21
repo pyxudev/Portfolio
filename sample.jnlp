@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp
+  spec="6.0+"
+  codebase="http://localhost/JWSsample"
+  href="sample.jnlp">
+  <information>
+    <title>Java Web Start Sample</title>
+    <vendor>Samurai Engineer</vendor>
+    <offline-allowed/> 
+  </information>
+  <security>
+      <all-permissions/>
+  </security>
+  <resources>
+    <j2se version="1.6+" />
+    <jar href="sample.jar"/>
+  </resources>
+  <application-desc main-class="SwingSample"/>
+</jnlp>
