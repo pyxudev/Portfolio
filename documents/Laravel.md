@@ -24,6 +24,7 @@ php artisan route:list
 ## Migration
 Roll back
 >php artisan migrate:reset
+
 >php artisan migrate
 
 PHP
