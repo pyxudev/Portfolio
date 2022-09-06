@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 import boto3
 
-data = feedparser.parse('https://dev.classmethod.jp/category/business/bigdata/feed/')
+data = feedparser.parse('https://******')
 
 # print(data.keys())
 
